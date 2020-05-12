@@ -1,0 +1,22 @@
+<!--**********************************
+    Sidebar start
+***********************************-->
+<div class="nk-sidebar" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="nk-nav-scroll">
+        <ul class="metismenu" id="menu">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li>
+                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
+                    <i class="icon-speedometer menu-icon"></i><span class="nav-text">Member</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="/member">All Member</a></li>
+                    <li th:if="${role == 'ADMIN'}"><a href="/user-new">Add New Member</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--**********************************
+    Sidebar end
+***********************************-->

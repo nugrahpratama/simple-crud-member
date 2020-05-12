@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{default}" class="h-100">
+<head>
+    <title>Dashboard</title>
+    <th:block th:include="fragments/header-link"></th:block>
+</head>
+<body class="h-100">
+<div layout:fragment="content" id="main-wrapper">
+
+    <th:block th:include="fragments/header/nav"></th:block>
+    <th:block th:include="fragments/header/header-bar"></th:block>
+
+    <th:block th:include="fragments/sidebar/sidebar-menu"></th:block>
+
+    <!--**********************************
+        Content body start
+    ***********************************-->
+    <div class="content-body text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Welcome to simple member</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/ container -->
+    </div>
+    <!--**********************************
+        Content body end
+    ***********************************-->
+
+    <th:block th:include="fragments/footer-copyright"></th:block>
+</div>
+<th:block th:include="fragments/footer-scripts"></th:block>
+</body>
+</html>

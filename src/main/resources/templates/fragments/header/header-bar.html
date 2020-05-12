@@ -1,0 +1,35 @@
+<!--**********************************
+    Header start
+***********************************-->
+<div class="header" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="header-content clearfix">
+
+        <div class="nav-control">
+            <div class="hamburger">
+                <span class="toggle-icon"><i class="icon-menu"></i></span>
+            </div>
+        </div>
+        <div class="header-left">
+        </div>
+        <div class="header-right">
+            <ul class="clearfix">
+                <li class="icons dropdown d-none d-md-flex">
+                    <a href="javascript:void(0)" class="log-user" data-toggle="dropdown" aria-expanded="false">
+                        <span th:text="${fullName}"></span><i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
+                    </a>
+                    <div class="drop-down dropdown-language animated fadeIn dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(5px, 59px, 0px);">
+                        <div class="dropdown-content-body">
+                            <ul>
+                                <li><a th:href="@{/profile/{id}(id=${currentUser.getId()})}">Your Profile</a></li>
+                                <li><a href="/logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--**********************************
+    Header end ti-comment-alt
+***********************************-->
